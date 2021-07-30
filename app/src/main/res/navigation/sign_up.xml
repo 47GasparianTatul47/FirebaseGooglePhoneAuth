@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up"
+    app:startDestination="@id/firstPageFragment">
+
+    <fragment
+        android:id="@+id/firstPageFragment"
+        android:label="fragment_first_page"
+        android:name="com.example.firstPage.FirstFragment"
+        tools:layout="@layout/fragment_first_page" >
+        <action
+            android:id="@+id/action_firstPageFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_firstPageFragment_to_mainUserUIFragment"
+            app:destination="@id/mainUserUIFragment" />
+        <action
+            android:id="@+id/action_firstPageFragment_to_userGooglePage"
+            app:destination="@id/userGooglePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.registerPage.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_phoneVerifyFragment"
+            app:destination="@id/phoneVerifyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneVerifyFragment"
+        android:name="com.example.phoneVerifyPage.PhoneVerifyFragment"
+        android:label="fragment_phone_verify"
+        tools:layout="@layout/fragment_phone_verify" >
+        <action
+            android:id="@+id/action_phoneVerifyFragment_to_mainUserUIFragment"
+            app:destination="@id/mainUserUIFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainUserUIFragment"
+        android:name="com.example.userMainVerifyPage.MainUserUIFragment"
+        android:label="fragment_main_user_u_i"
+        tools:layout="@layout/fragment_main_user_u_i" >
+        <action
+            android:id="@+id/action_mainUserUIFragment_to_userGooglePage"
+            app:destination="@id/userGooglePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/userGooglePage"
+        android:name="com.example.registerGoogle.UserGooglePage"
+        android:label="fragment_user_google_page"
+        tools:layout="@layout/fragment_user_google_page" >
+        <action
+            android:id="@+id/action_userGooglePage_to_firstPageFragment"
+            app:destination="@id/firstPageFragment" />
+    </fragment>
+</navigation>

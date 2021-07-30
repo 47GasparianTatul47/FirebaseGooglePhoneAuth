@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "475368124313",
+    "project_id": "mvvmphoneauth",
+    "storage_bucket": "mvvmphoneauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475368124313:android:8c8c730c148b81c4ec6d08",
+        "android_client_info": {
+          "package_name": "com.example.phoneauthfirebasemvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475368124313-v3ms9cggqr8ur5f3t7605esabuadkj0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phoneauthfirebasemvvm",
+            "certificate_hash": "1ea59cd64c6a41397c97ff3c596a296b1d54f3ef"
+          }
+        },
+        {
+          "client_id": "475368124313-hgjqvn1t1gaggcgu26s66q8idacpgj48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSXbQbffbZAooFGo7RG1TD4bQYS8E7EQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475368124313-hgjqvn1t1gaggcgu26s66q8idacpgj48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
